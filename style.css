@@ -1,0 +1,40 @@
+img {
+  width: 500px;
+  border-radius: 25px;
+}
+
+members img {
+  height: 20px;
+  width: auto;
+  border-radius: 0px;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  background-color: pink;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: gray;
+}
+ul {
+  position: sticky;
+  top: 0;
+}
+
+li p {
+  display: inline;
+}
+
+li p:hover {
+  background-color: gray;
+}
+
+li.active {
+  background-color: white;
+}

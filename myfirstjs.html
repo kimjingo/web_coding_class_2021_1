@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div#myMsg {
+        background-color: pink;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myMsg">Hello</div>
+    <button onclick="myFunction3();">Hi</button>
+    <script>
+      function myFunction2() {
+        alert("Hello again, Jay!");
+      }
+      function myFunction3() {
+        var num1 = 8;
+        var num2 = 9;
+        var myName = "Jay";
+        // number, string, Date, array, object
+        var msg = document.getElementById("myMsg");
+
+        msg.innerHTML =
+          "Hi, " +
+          myName +
+          "!! ____ " +
+          num1 +
+          " x " +
+          num2 +
+          " = " +
+          num1 * num2;
+        msg.style.color = "blue";
+        msg.style.backgroundColor = "gray";
+      }
+
+      function myfunc3() {
+        var arr = [1, 5, 3, 4, 6];
+        var arr2 = ["jay", "sam", "toni", "thomas", "tracy"];
+        arr.forEach((ar) => {
+          alert(ar);
+        });
+        // alert(arr2[0]);
+        // alert(arr2[1]);
+        // alert(arr2[2]);
+        // alert(arr2[3]);
+        // alert(arr2[4]);
+      }
+      // myfunc3();
+      function myfunc4() {
+        var obj = { name: "jay", age: 21, gender: "male" };
+        alert(obj["gender"]);
+      }
+      myfunc4();
+    </script>
+  </body>
+</html>
